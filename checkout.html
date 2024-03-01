@@ -1,12 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <style>
+        @font-face {
+            font-family: 'Rubik';
+            src: url('Rubik-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Quicksand';
+            src: url('Quicksand-Regular.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Rubik', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            margin-bottom: 50px; /* Add margin-bottom to create space for the footer */
+            margin-bottom: 50px; /*aAdd margin-bottom to make space for footer */
         }
 
         header {
@@ -25,10 +39,40 @@
         }
 
         section {
-            text-align: center;
+            text-align: left;
+            padding: 20px;
+            font-family: 'Quicksand', Arial, sans-serif; /* set font for the section */
         }
 
-       
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            margin-bottom: 10px;
+        }
+
+        input, select {
+            width: 30%;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #333; /* darken the background color on hover - looks cool when button is a light colour*/
+        }
 
         footer {
             text-align: center;
@@ -59,7 +103,7 @@
             margin: 0;
         }
 
-        /* New styles for small images and company name positioning */
+        /* footer designg */
         footer ul li img {
             width: 30px;
         }
@@ -75,12 +119,8 @@
             <ul>
                 <li><a href="homepage.html">HOME</a></li>
                 <li><a href="aboutus.html">ABOUT US</a></li>
-                <li><a href="productcategory.html">PRODUCT CATEGORIES</a></li>
-                <li><a href="clothingproductdetail.html">PRODUCT DETAILS</a></li>
-                <li><a href="shopingcategory.html">SHOPPING CATEGORIES</a></li>
+                <li><a href="shopingcategory.html">SHOP</a></li>
                 <li><a href="shoppingcart.html">SHOPPING CART</a></li>
-                <li><a href="checkout.html">CHECK OUT</a></li>
-                <li><a href="orderconfirmation.html">ORDER CONFIRMATION</a></li>
                 <li><a href="contactus.html">CONTACT US</a></li>
             </ul>
         </nav>
@@ -89,7 +129,27 @@
     </header>
     
     <section>
-        
+        <form action="orderconfirmation.html" method="post" id="checkoutForm">
+            <!-- mock info for testing -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" value="Hannah Smith">
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" value="16 Main St">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value="hannah.smith@gmail.com">
+
+            <label for="payment">Payment Method:</label>
+            <select id="payment" name="payment">
+                <option value="credit">Credit Card</option>
+                <option value="debit">Debit Card</option>
+                <option value="paypal">PayPal</option>
+            </select>
+            
+            <!-- use a regular button with JavaScript onClick event | I got this code from StackOverflow: https://stackoverflow.com/questions/16849117/html-how-to-do-a-confirmation-popup-to-a-submit-button-and-then-send-the-reque -->
+            <button type="button" onclick="navigateToConfirmation()">Confirm Order</button>
+        </form>
     </section>
 
     <footer>
@@ -100,5 +160,13 @@
         </ul>
         <h3>Ethereal Threads</h3>
     </footer>
+
+    <script>
+        function navigateToConfirmation() {
+            // made a function for navigating to the next page (see the stackoverflow comment - I wanted this flow to work)
+            window.location.href = "orderconfirmation.html";
+        }
+    </script>
+
 </body>
 </html>

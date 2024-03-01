@@ -2,11 +2,25 @@
 <html>
 <head>
     <style>
+        @font-face {
+            font-family: 'Rubik';
+            src: url('Rubik-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Quicksand';
+            src: url('Quicksand-Regular.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Rubik', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            margin-bottom: 50px; /* Add margin-bottom to create space for the footer */
+            margin-bottom: 50px;
         }
 
         header {
@@ -26,9 +40,16 @@
 
         section {
             text-align: center;
+            padding: 20px;
+            font-family: 'Quicksand', Arial, sans-serif;
         }
 
-       
+        section img {
+            width: 450px;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
 
         footer {
             text-align: center;
@@ -59,7 +80,6 @@
             margin: 0;
         }
 
-        /* New styles for small images and company name positioning */
         footer ul li img {
             width: 30px;
         }
@@ -75,12 +95,8 @@
             <ul>
                 <li><a href="homepage.html">HOME</a></li>
                 <li><a href="aboutus.html">ABOUT US</a></li>
-                <li><a href="productcategory.html">PRODUCT CATEGORIES</a></li>
-                <li><a href="clothingproductdetail.html">PRODUCT DETAILS</a></li>
-                <li><a href="shopingcategory.html">SHOPPING CATEGORIES</a></li>
+                <li><a href="shopingcategory.html">SHOP</a></li>
                 <li><a href="shoppingcart.html">SHOPPING CART</a></li>
-                <li><a href="checkout.html">CHECK OUT</a></li>
-                <li><a href="orderconfirmation.html">ORDER CONFIRMATION</a></li>
                 <li><a href="contactus.html">CONTACT US</a></li>
             </ul>
         </nav>
@@ -89,20 +105,12 @@
     </header>
     
     <section>
-        <p>Have questions, suggestions, or just want to say hello? We'd love to hear from you!</p>
-
-        <form action="process_contact_form.php" method="post">
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Your Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <input type="submit" value="Submit">
-        </form>
+        <!-- add some mo0ck info so the store and a pic for aesthetics-->
+        <p>Feel free to reach out to us with any questions, concerns, or feedback. We'd love to hear from you!</p>
+        <img src="images/contactusimg.jpg">
+        <p>Email: info@etherealthreads.com</p>
+        <p>Phone: (021) 671-7240</p>
+        <p>Address: 123 Kings Ave, Cape Town</p>
     </section>
 
     <footer>

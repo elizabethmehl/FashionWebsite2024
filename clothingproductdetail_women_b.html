@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        @font-face {
+            font-family: 'Rubik';
+            src: url('Rubik-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Quicksand';
+            src: url('Quicksand-Regular.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'Rubik', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            margin-bottom: 50px;
+        }
+        
+        header {
+            text-align: center;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        nav li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        
+        nav li a {
+            padding: 8px 12px;
+            font-size: 14px;
+            text-decoration: none;
+            color: black;
+        }
+        
+        section {
+            text-align: left;
+            padding: 20px;
+            font-family: 'Quicksand', Arial, sans-serif;
+        }
+        
+        .image-container {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .image-container img {
+            width: 400px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .image-container p {
+            font-size: 14px;
+        }
+        
+        footer {
+            text-align: center;
+            background-color: black;
+            color: white;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        footer ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: left;
+        }
+        
+        footer li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        
+        footer h3 {
+            margin: 0;
+        }
+        
+        footer ul li img {
+            width: 30px;
+        }
+        
+        footer h3 {
+            order: -1;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">HOME</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="shopingcategory.html">SHOP</a></li>
+                <li><a href="shoppingcart.html">SHOPPING CART</a></li>
+                <li><a href="contactus.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <h1>Women's Bottoms</h1>
+    </header>
+    
+    <section>
+        <div class="image-container">
+            <div>
+                <img src="images/wb1.png" alt="Women's black and white printed pants">
+                <p>FUNCKY B&W PANTS: black and white prints are in</p>
+            </div>
+            <div>
+                <img src="images/wb2.png" alt="Women's orange pants">
+                <p>ORANGE PANTS: super funky orange pants</p>
+            </div>
+            <div>
+                <img src="images/wb3.png" alt="Women's black and white skirt">
+                <p>B&W SKIRT: a cute little skirt</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <ul>
+            <li><img src="images/fb.png"></li>
+            <li><img src="images/insta.png"></li>
+            <li><img src="images/yt.png"></li>
+        </ul>
+        <h3>Ethereal Threads</h3>
+    </footer>
+</body>
+</html>

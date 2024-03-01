@@ -2,11 +2,25 @@
 <html>
 <head>
     <style>
+        @font-face {
+            font-family: 'Rubik';
+            src: url('Rubik-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Quicksand';
+            src: url('Quicksand-Regular.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Rubik', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            margin-bottom: 50px; /* Add margin-bottom to create space for the footer */
+            margin-bottom: 50px;
         }
 
         header {
@@ -26,9 +40,27 @@
 
         section {
             text-align: center;
+            padding: 20px;
+            font-family: 'Quicksand', Arial, sans-serif; /* set custom font for the section */
         }
 
-       
+        .confirmation-message {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .order-details {
+            font-size: 16px;
+        }
+
+        .image-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .image-container img {
+            width: 550px;
+        }
 
         footer {
             text-align: center;
@@ -59,7 +91,7 @@
             margin: 0;
         }
 
-        /* New styles for small images and company name positioning */
+        /* footer */
         footer ul li img {
             width: 30px;
         }
@@ -75,21 +107,31 @@
             <ul>
                 <li><a href="homepage.html">HOME</a></li>
                 <li><a href="aboutus.html">ABOUT US</a></li>
-                <li><a href="productcategory.html">PRODUCT CATEGORIES</a></li>
-                <li><a href="clothingproductdetail.html">PRODUCT DETAILS</a></li>
-                <li><a href="shopingcategory.html">SHOPPING CATEGORIES</a></li>
+                <li><a href="shopingcategory.html">SHOP</a></li>
                 <li><a href="shoppingcart.html">SHOPPING CART</a></li>
-                <li><a href="checkout.html">CHECK OUT</a></li>
-                <li><a href="orderconfirmation.html">ORDER CONFIRMATION</a></li>
                 <li><a href="contactus.html">CONTACT US</a></li>
             </ul>
         </nav>
         <hr>
-        <h1>Order Confrimation</h1>
+        <h1>Order Confirmation</h1>
     </header>
     
     <section>
-        
+        <!-- here is where I have written the confrimation message that is display - if dynamic would chnange for eachuser-->
+        <div class="confirmation-message">
+            <p>Thank you for your order! Your purchase is confirmed.</p>
+            <p>An email with your order details will be sent to you shortly.</p>
+        </div>
+
+        <div class="order-details">
+            <p>Order Number: #63832</p>
+            <p>Order Date: February 29, 2024</p>
+            <p>Estimated Delivery Date: March 08, 2024</p>
+        </div>
+
+        <div class="image-container">
+            <img src="images/confirmpic.jpg" alt="Man leaning on wall">
+        </div>
     </section>
 
     <footer>

@@ -2,11 +2,25 @@
 <html>
 <head>
     <style>
+        @font-face {
+            font-family: 'Rubik';
+            src: url('Rubik-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Quicksand';
+            src: url('Quicksand-Regular.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Rubik', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            margin-bottom: 50px; /* Add margin-bottom to create space for the footer */
+            margin-bottom: 50px; /* add a margin-bottom to create space for the footer */
         }
 
         header {
@@ -25,10 +39,21 @@
         }
 
         section {
-            text-align: center;
+            text-align: left;
+            padding: 20px;
+            font-family: 'Quicksand', Arial, sans-serif; /* set font for the section */
         }
 
-       
+        section p {
+            margin-bottom: 20px;
+        }
+
+        section img {
+            width: 300px; /* adjust the width as needed */
+            height: auto;
+            display: block; /* ensures images are on a new line */
+            margin-bottom: 10px;
+        }
 
         footer {
             text-align: center;
@@ -59,13 +84,23 @@
             margin: 0;
         }
 
-        /* New styles for small images and company name positioning */
+        /* footer */
         footer ul li img {
             width: 30px;
         }
 
         footer h3 {
             order: -1;
+        }
+
+        /* added styles for the image container */
+        section div {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        section div img {
+            margin-right: 10px; /* you can change the margin for spacing */
         }
     </style>
 </head>
@@ -75,12 +110,8 @@
             <ul>
                 <li><a href="homepage.html">HOME</a></li>
                 <li><a href="aboutus.html">ABOUT US</a></li>
-                <li><a href="productcategory.html">PRODUCT CATEGORIES</a></li>
-                <li><a href="clothingproductdetail.html">PRODUCT DETAILS</a></li>
-                <li><a href="shopingcategory.html">SHOPPING CATEGORIES</a></li>
+                <li><a href="shopingcategory.html">SHOP</a></li>
                 <li><a href="shoppingcart.html">SHOPPING CART</a></li>
-                <li><a href="checkout.html">CHECK OUT</a></li>
-                <li><a href="orderconfirmation.html">ORDER CONFIRMATION</a></li>
                 <li><a href="contactus.html">CONTACT US</a></li>
             </ul>
         </nav>
@@ -89,15 +120,20 @@
     </header>
     
     <section>
-        <p>Welcome to Ethereal Threads, where fashion meets elegance. We are a passionate team dedicated to bringing you the finest and most stylish clothing that complements your unique personality.</p>
+        <p>Welcome to Ethereal Threads, where fashion meets elegance. We are a passionate team dedicated to bringing you the finest and most stylish clothing that complements your unique personality. We have styles for every occasion from a casual day to a formal evening.</p>
 
-        <p>At Ethereal Threads, we believe that fashion is not just about clothing; it's a form of self-expression. Our curated collections are designed to inspire and empower individuals to embrace their individuality and showcase their style confidently.</p>
+        <p>At Ethereal Threads, we believe that fashion is not just about clothing; it affects our environment, which is why we strive to be eco-friendly. Fashion is a form of self-expression. Our curated collections are designed to inspire and empower individuals to embrace themselves and showcase their style confidently.</p>
 
         <p>What sets us apart is our commitment to quality and creativity. Each piece in our collection is carefully selected to ensure comfort, durability, and, most importantly, a touch of ethereal charm. Whether you're looking for casual wear, sophisticated evening attire, or trendy accessories, Ethereal Threads has something for every fashion enthusiast.</p>
 
-        <p>Our mission is to redefine the way you experience fashion. We strive to create a seamless and enjoyable shopping experience, ensuring that you not only love what you wear but also cherish the journey of finding it.</p>
-
-        <p>Thank you for choosing Ethereal Threads. Join us on this fashion-forward adventure, and let your style speak volumes!</p>
+        <p>Our mission is to redefine the way you experience fashion. We strive to create a seamless and enjoyable shopping experience for everyone, regadless of body type, hence our size range from 2XS to 7XL. Ensuring that you not only love what you wear but also cherish the journey of finding it. Thank you for choosing Ethereal Threads. Join us on this fashion-forward adventure, and let your style speak volumes!</p>
+        
+        <div>
+            <img src="images/manonmountain.jpg">
+            <img src="images/tanktop.jpg">
+            <img src="images/dressonpier.jpg">
+            <img src = "images/cooldresswithflowy.jpg">
+        </div>
     </section>
 
     <footer>

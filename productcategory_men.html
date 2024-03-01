@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        @font-face {
+            font-family: 'Rubik';
+            src: url('Rubik-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Quicksand';
+            src: url('Quicksand-Regular.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'Rubik', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            margin-bottom: 50px;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        section {
+            text-align: center;
+            padding: 20px;
+            display: flex;
+            flex-wrap: nowrap; /* ensure buttons are on the same row */
+            justify-content: center; /* center the buttons horizontally */
+            font-family: 'Quicksand', Arial, sans-serif;
+        }
+
+        footer {
+            text-align: center;
+            background-color: black;
+            color: white;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: left;
+        }
+
+        footer li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        footer h3 {
+            margin: 0;
+        }
+
+        footer ul li img {
+            width: 30px;
+        }
+
+        footer h3 {
+            order: -1;
+        }
+
+        section button {
+            border: none;
+            background: none;
+            padding: 0;
+            margin: 20px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        section button:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">HOME</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="shopingcategory.html">SHOP</a></li>
+                <li><a href="shoppingcart.html">SHOPPING CART</a></li>
+                <li><a href="contactus.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <h1>Shop Men</h1>
+    </header>
+    
+    <section>>
+        <!-- each image acts as a button which links you to the next page-->
+        <a href="clothingproductdetail_men_t.html"><button><img src="images/t_m.png" alt="Men's Tops"></button></a>
+        <a href="clothingproductdetail_men_b.html"><button><img src="images/b_m.png" alt="Men's Bottoms"></button></a>
+        <a href="clothingproductdetail_men_f.html"><button><img src="images/f_m.png" alt="Men's Formal"></button></a>
+        <!-- can add more categories as needed -->
+    </section>
+
+    <footer>
+        <ul>
+            <li><img src="images/fb.png"></li>
+            <li><img src="images/insta.png"></li>
+            <li><img src="images/yt.png"></li>
+        </ul>
+        <h3>Ethereal Threads</h3>
+    </footer>
+</body>
+</html>

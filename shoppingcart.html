@@ -1,12 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        @font-face {
+            font-family: 'Rubik';
+            src: url('Rubik-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Quicksand';
+            src: url('Quicksand-Regular.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Rubik', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            margin-bottom: 50px; /* Add margin-bottom to create space for the footer */
+            margin-bottom: 50px;
         }
 
         header {
@@ -26,9 +42,28 @@
 
         section {
             text-align: center;
+            padding: 20px;
+            font-family: 'Quicksand', Arial, sans-serif; /*font*/
         }
 
-       
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
 
         footer {
             text-align: center;
@@ -59,7 +94,7 @@
             margin: 0;
         }
 
-        /* New styles for small images and company name positioning */
+        /* new styles for small images and company name positioning */
         footer ul li img {
             width: 30px;
         }
@@ -67,7 +102,31 @@
         footer h3 {
             order: -1;
         }
+
+        /* additional styles for the checkout button */
+        a {
+            text-decoration: none; /* remove default underline */
+        }
+
+        button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #333;
+        }
+        img {
+            width: 250px;
+            margin-bottom: 20px;
+        }
     </style>
+    <title>Checkout</title>
 </head>
 <body>
     <header>
@@ -75,12 +134,8 @@
             <ul>
                 <li><a href="homepage.html">HOME</a></li>
                 <li><a href="aboutus.html">ABOUT US</a></li>
-                <li><a href="productcategory.html">PRODUCT CATEGORIES</a></li>
-                <li><a href="clothingproductdetail.html">PRODUCT DETAILS</a></li>
-                <li><a href="shopingcategory.html">SHOPPING CATEGORIES</a></li>
+                <li><a href="shopingcategory.html">SHOP</a></li>
                 <li><a href="shoppingcart.html">SHOPPING CART</a></li>
-                <li><a href="checkout.html">CHECK OUT</a></li>
-                <li><a href="orderconfirmation.html">ORDER CONFIRMATION</a></li>
                 <li><a href="contactus.html">CONTACT US</a></li>
             </ul>
         </nav>
@@ -89,14 +144,42 @@
     </header>
     
     <section>
-        
+        <img src="images/ladyshopping.jpg" alt="Lady with shopping bags">
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>STRIPED LONG SLEEVE</td>
+                    <td>R350.00</td>
+                    <td>2</td>
+                    <td>R700.00</td>
+                </tr>
+                <tr>
+                    <td>DENIM JEANS</td>
+                    <td>R650.00</td>
+                    <td>1</td>
+                    <td>R650.00</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Total: R1 350.00</p>
+        <a href="checkout.html">
+            <button>Proceed to Checkout</button> <!-- proceed to next page after click the button-->
+        </a>
     </section>
 
     <footer>
         <ul>
-            <li><img src="images/fb.png"></li>
-            <li><img src="images/insta.png"></li>
-            <li><img src="images/yt.png"></li>
+            <li><img src="images/fb.png" alt="Facebook"></li>
+            <li><img src="images/insta.png" alt="Instagram"></li>
+            <li><img src="images/yt.png" alt="YouTube"></li>
         </ul>
         <h3>Ethereal Threads</h3>
     </footer>

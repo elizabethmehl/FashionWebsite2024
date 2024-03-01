@@ -2,15 +2,30 @@
 <html>
 <head>
     <style>
+        @font-face {
+            font-family: 'Rubik';
+            /* add custom fonts */
+            src: url('Rubik-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Quicksand';
+            src: url('Quicksand-Regular.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Rubik', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            margin-bottom: 50px; /* Add margin-bottom to create space for the footer */
+            margin-bottom: 50px;
         }
 
         header {
-            text-align: center;
+            text-align: center; /* make sure text is centered for the header*/
         }
 
         nav ul {
@@ -26,17 +41,21 @@
 
         section {
             text-align: center;
+            font-family: 'Quicksand', Arial, sans-serif;
         }
 
-        /* Set a fixed height for the container */
+        /* set a height for the container */
         .image-container {
             text-align: center;
-            height: 440px; /* Adjust the height as needed */
+            height: 440px; /* you can change the height here */
         }
 
-        .row {
-            display: flex;
-            justify-content: center;
+         /* make sure that pics in the row are the same size */
+         .row img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            margin: 10px;
         }
 
         section img {
@@ -75,13 +94,18 @@
             margin: 0;
         }
 
-        /* New styles for small images and company name positioning */
+        /* footer formatting */
         footer ul li img {
             width: 30px;
         }
 
         footer h3 {
             order: -1;
+        }
+
+        /* change text color to #1167b1 for the What's New piece*/
+        h2 {
+            color: #1167b1;
         }
     </style>
 </head>
@@ -91,12 +115,8 @@
             <ul>
                 <li><a href="homepage.html">HOME</a></li>
                 <li><a href="aboutus.html">ABOUT US</a></li>
-                <li><a href="productcategory.html">PRODUCT CATEGORIES</a></li>
-                <li><a href="clothingproductdetail.html">PRODUCT DETAILS</a></li>
-                <li><a href="shopingcategory.html">SHOPPING CATEGORIES</a></li>
+                <li><a href="shopingcategory.html">SHOP</a></li>
                 <li><a href="shoppingcart.html">SHOPPING CART</a></li>
-                <li><a href="checkout.html">CHECK OUT</a></li>
-                <li><a href="orderconfirmation.html">ORDER CONFIRMATION</a></li>
                 <li><a href="contactus.html">CONTACT US</a></li>
             </ul>
         </nav>
@@ -106,9 +126,9 @@
     
     <section class="image-container">
         <h2>WHAT'S NEW</h2>
-        <p>Explore the allure of our latest items</p>
+        <p>explore the allure of our latest items & the magic of our sales</p>
 
-        <!-- Two rows with three images each -->
+        <!-- two rows with 3 pics each -->
         <div class="row">
             <img src="images/flowydress_hp.png">
             <img src="images/manincap_hp.png">
